@@ -1,0 +1,37 @@
+{
+  "name": "carrusel-package",
+  "version": "1.0.0",
+  "description": "installable package for an image carousel",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --mode development --config config/webpack.config.js --watch",
+    "build": "webpack --mode production --config config/webpack.config.js --progress"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@s-ui/lint": "^3.30.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^5.2.1",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-watch": "^7.0.0",
+    "node-sass": "^5.0.0",
+    "proptypes": "^1.1.0",
+    "react": "^17.0.2",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
