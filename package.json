@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode development --config config/webpack.config.js --watch",
-    "build": "webpack --mode production --config config/webpack.config.js --progress"
+    "build": "webpack --mode production --config config/webpack.config.js --progress",
+    "prepublishOnly": "npm unlink && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -33,5 +34,8 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.31.2",
     "webpack-cli": "^4.6.0"
+  },
+  "peerDependencies": {
+    "react": "^15.5.4"
   }
 }
