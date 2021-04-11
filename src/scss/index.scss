@@ -1,0 +1,60 @@
+$breakpoint-tablet: 769px;
+$breakpoint-desktop: 1024px;
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-arrow {
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+
+    &Right {
+      font-size: 32px;
+      position: absolute;
+      top: 50%;
+      right: 14%;
+      z-index: 10;
+
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 50px;
+      }
+    }
+
+    &Left {
+      font-size: 32px;
+      position: absolute;
+      top: 50%;
+      left: 14%;
+      z-index: 10;
+
+      @media (min-width: $breakpoint-desktop) {
+        font-size: 50px;
+      }
+    }
+  }
+
+  &-slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+  
+    &Image {
+      width: 80%;
+      height: 80%;
+      border-radius: 10px;
+    }
+  }
+  
+  &-slide.active {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+}
+
+
