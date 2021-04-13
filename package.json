@@ -1,13 +1,13 @@
 {
   "name": "carrusel-package",
-  "version": "1.0.1",
+  "version": "1.3.0",
   "description": "installable package for an image carousel",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --mode development --config config/webpack.config.js --watch",
-    "build": "webpack --mode production --config config/webpack.config.js --progress",
-    "prepublishOnly": "npm unlink && npm run build"
+    "build": "rm -rf ./build && webpack --mode production --config config/webpack.config.js --progress",
+    "prepublishOnly": "npm run build && cp src/scss/index.scss ./build"
   },
   "keywords": [],
   "author": "",
