@@ -20,7 +20,7 @@ module.exports = {
       {
         test: /\.(c|sc|sa)ss$/,
         exclude: /(node_modules|build)/,
-        use: ['css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -39,7 +39,7 @@ module.exports = {
     },
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.css'],
+    extensions: ['.js', '.jsx', '.css', 'scss'],
     alias: {
       react: path.resolve(__dirname, './node_modules/react'),
       'prop-types': path.resolve(
