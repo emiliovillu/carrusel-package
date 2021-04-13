@@ -1,6 +1,6 @@
 {
   "name": "carrusel-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "installable package for an image carousel",
   "main": "build/index.js",
   "scripts": {
