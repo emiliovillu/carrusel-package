@@ -1,5 +1,3 @@
-/* eslint-disable react/forbid-prop-types */
-/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState, useEffect, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
