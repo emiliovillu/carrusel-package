@@ -14,7 +14,7 @@
     "import/extensions": 0,
     "no-mixed-operators": 0,
     "import/no-unresolved": "off",
-    "react/forbid-prop-types": [true, { "forbid": ['any'], "checkContextTypes": true, "checkChildContextTypes": true }],
+    "react/forbid-prop-types": [true, { "forbid": ["any"], "checkContextTypes": true, "checkChildContextTypes": true }],
     "react/jsx-filename-extension": [
       "error",{ "extensions": [".js", ".jsx"] }
     ],
